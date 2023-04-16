@@ -15,7 +15,7 @@ export const Basket = () => {
   const basket = useAppSelector(selectShoppingBasket);
   const handleClick = () => {
     dispatch(setShoppingBasket());
-    navigate(basket ? "/?page=1" : "/ShoppingBasket/");
+    navigate(basket ? "/test/?page=1" : "/test/ShoppingBasket/");
   };
   return (
     <Badge

@@ -24,7 +24,7 @@ export const Modal = () => {
   const modal = useAppSelector(selectModal);
   const handleClose = () => {
     dispatch(resetBasket());
-    navigate("/?page=1");
+    navigate("/test/?page=1");
   };
   return (
     <>

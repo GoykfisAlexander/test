@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route
-          path="/"
+          path="/test"
           element={
             <>
               <Container
@@ -33,7 +33,7 @@ function App() {
             </>
           }
         />
-        <Route path="/:basket/*" element={<ShoppingBasket />} />
+        <Route path="/test/:basket/*" element={<ShoppingBasket />} />
       </Routes>
     </div>
   );
