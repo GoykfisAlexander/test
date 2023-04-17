@@ -49,10 +49,8 @@ export const Product = ({ product, inStore }: IProps) => {
         sx={{
           width: "100%",
           height: "10vh",
-          backgroundPosition: "center",
-          backgroundSize: "contain",
+          background: `url(./${product.image})center/contain no-repeat`,
         }}
-        image={`.${product.image}`}
         title={product.title}
       ></CardMedia>
       <CardContent sx={{ display: "flex", justifyContent: "space-around" }}>
