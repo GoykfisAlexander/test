@@ -30,10 +30,9 @@ export const Checkout = () => {
       }
     } catch (error) {
       console.error(error);
+    } finally {
+      dispatch(setModal());
     }
-    // finally {
-    //   dispatch(setModal());
-    // }
   };
   const totalCost = () => {
     let total = 0;
